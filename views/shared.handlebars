@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Plant Screen</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- gives browser instructions on how to control
+	page dimensions and scaling -->
+	
+
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="/css/plant.css" rel="stylesheet">
+</head>
+<body>
+	<div class = "container">
+		<h2><i class="arrow leftArrow" onclick="history.back(-1)"></i>Shared Plant</h2>
+		<hr size="30">
+	
+
+	<h1>{{friendName}}</h1>
+
+	<div class = "pot" style="width:100%">
+		<img src = "/images/plant.png" style="width:40%">
+		
+		<div class = "inLine">
+			<div class = "right">
+				<h4>{{friendName}}:</h4>
+				<h5>{{friendScore}}/8</h5>
+			</div>
+			<div class = "left">
+				<h4>You:</h4>
+				<h5>{{userScore}}/8</h5>
+			</div>
+		</div>
+		 <a href="/archive"><button style="width:30%">Past Plants</button></a>
+	</div>
+
+
+
+	  <div class="btn-group" style="width:100%">
+      		<a href="/sip"><button style="width:19%">Sip</button></a>
+      		<a href="/friends"><button style="width:19%">Friends</button></a>
+  		</div>
+	</div>
+  <script src="https://code.jquery.com/jquery.js"></script>
+	<script src= "js/bootstrap.js"></script>
+	<script src="data.json"></script>
+
+</body>
+</html>

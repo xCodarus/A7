@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Friends Screen</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- gives browser instructions on how to control page dimensions and scaling -->
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/plant.css" rel="stylesheet">
+</head>
+<body>
+	<div class = "container">
+		<h2><i class="arrow leftArrow" onclick="history.back(-1)"></i>Friend List</h2>
+		<hr size="30">
+
+		<div class="friend-list">
+			{{#each users}}
+				{{#if isUser}}
+				{{else}}
+				<div onclick="location.href= '/shared/{{name}}' ">
+					<h3 class="friend" style="float: left;">
+						{{name}}  <img class="friend-pager" style="padding: 20px;" src="/images/plant.png" ... />
+					</h3>
+				</div>
+				{{/if}}
+			{{/each}}
+		</div>
+
+
+
+
+		<div class="btn-group" style="width:100%">
+      		<a href="sip"><button style="width:19%">Sip</button></a>
+      		<a href="friends"><button style="width:19%">Friends</button></a>
+  		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src= "js/bootstrap.js"></script>
+
+</body>
+</html>
