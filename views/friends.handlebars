@@ -15,8 +15,19 @@
 		<hr size="30">
 
 		<div class="friend-list">
+			<div class="friendBorder">
+			<form id="addFriendForm" role="form" method="get" action="/add">
+			<h3>Add a Friend</h3>
+	    	<div class="form-group">
+	      	<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+	      	</div>
+	    	<input type="submit" id="submitBtn" class="btn btn-default" value="Add"></input>
+	    </div>
+	    </form>
 			{{#each users}}
 				{{#if isUser}}
+
+
 				{{else}}
 				<div onclick="location.href= '/shared/{{name}}' ">
 					<h3 class="friend" style="float: left;">
@@ -26,7 +37,6 @@
 				{{/if}}
 			{{/each}}
 		</div>
-
 
 
 
