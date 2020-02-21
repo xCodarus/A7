@@ -21,7 +21,7 @@ function sipListener(e) {
 	// Prevent following the link
 	e.preventDefault();
 	console.log("hey");
-	$.getJSON('../users.json', logSip);
+	$.post('../users.json', logSip);
 }
 
 function logSip(result) {
