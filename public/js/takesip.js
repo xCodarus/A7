@@ -21,6 +21,9 @@ function sipListener(e) {
 	console.log("pffft");
 	var projectHTML = "<img src='/images/Cup6.png' style='width:40%' ... />";
 	$('.sip-tracker').html(projectHTML);
+	$.get("https://localhost:3000/update", updateImage);
 }
 
-	
+function updateImage(result) {
+	console.log(result);
+}

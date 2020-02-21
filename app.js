@@ -47,11 +47,8 @@ app.get('/archive', archive.view);
 app.get('/friends', friends.view);
 app.get('/shared/:name', shared.viewProject);
 app.get('/login', login.auth);
-<<<<<<< HEAD
 app.get('/update', update.updateSip);
-=======
 app.get('/add', add.addFriend);
->>>>>>> ce5a2994e43dfa86b79862987f24a1bc45f6686b
 
 // Example route
 // app.get('/users', user.list);

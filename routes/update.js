@@ -17,6 +17,8 @@ exports.updateSip = function(req, res) {
 				tempGrowth = tempGrowth + 1;
 				data.users[i].growth = tempGrowth;
 			}
+			var user = data.users[i];
+			res.json(user);
 			break;
 		} 
 	}
