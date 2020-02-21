@@ -8,5 +8,5 @@ exports.view = function(req, res){
 			break;
 		} 
 	}
-	res.render('index');
+	res.render('sip');
 };
