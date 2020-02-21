@@ -18,14 +18,9 @@ function initializePage() {
  * Make an AJAX call to retrieve project details and add it in
  */
 function sipListener(e) {
-	// Prevent following the link
-	e.preventDefault();
-	console.log("hey");
-	$.post('../users.json', logSip);
-}
-
-function logSip(result) {
-	console.log(result);
+	console.log("pffft");
 	var projectHTML = "<img src='/images/Cup6.png' style='width:40%' ... />";
 	$('.sip-tracker').html(projectHTML);
 }
+
+	

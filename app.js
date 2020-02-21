@@ -13,6 +13,7 @@ var sip = require('./routes/sip');
 var archive = require('./routes/archive');
 var friends = require('./routes/friends');
 var shared = require('./routes/shared');
+var update = require('./routes/update');
 var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
@@ -45,6 +46,7 @@ app.get('/archive', archive.view);
 app.get('/friends', friends.view);
 app.get('/shared/:name', shared.viewProject);
 app.get('/login', login.auth);
+app.get('/update', update.updateSip);
 
 // Example route
 // app.get('/users', user.list);
