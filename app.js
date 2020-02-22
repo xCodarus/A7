@@ -40,7 +40,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', sip.view);
 app.get('/sip', sip.view);
 app.get('/archive', archive.view);
 app.get('/friends', friends.view);
