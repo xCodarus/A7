@@ -21,12 +21,6 @@ exports.auth = function(req, res) {
 			res.render('sip', user);
 			break;
 		}
-		else if (data.users[i].name == "Test" && data.users[i].password == "password") {
-			data.users[i].isUser = true;
-			var user = data.users[i];
-			res.render('sip', user);
-			break;
-		}
 	}
 	res.render('index');
 }
