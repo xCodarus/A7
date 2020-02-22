@@ -23,5 +23,4 @@ exports.auth = function(req, res) {
 			res.render('sip');
 		}
 	}
-	res.render('index');
 }
