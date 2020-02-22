@@ -15,8 +15,9 @@ exports.auth = function(req, res) {
 	console.log(login);
 	for (i=0; i < data.users.length; i++) {
 		console.log(data.users[i]);
-		if (data.users[i].name == login.name && data.users[i].password == login.description) {
-			data.users[i].isUser = true;
+//		if (data.users[i].name == login.name && data.users[i].password == login.description) {
+//			data.users[i].isUser = true;
+		if (data.users[i].isUser == true) {
 			var user = data.users[i];
 			res.render('sip', user);
 			break;
