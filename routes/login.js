@@ -21,7 +21,6 @@ exports.auth = function(req, res) {
 			console.log("work");
 			var user = data.users[i];
 			res.render('sip', user);
-			break;
 		}
 	}
 	res.render('index');
